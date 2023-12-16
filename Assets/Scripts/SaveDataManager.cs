@@ -48,12 +48,12 @@ public class SaveDataManager : MonoBehaviour
 
         string json = JsonUtility.ToJson(data);
 
-        File.WriteAllText(Application.persistentDataPath + "/highscoresavefile.json", json);
+        File.WriteAllText(Application.persistentDataPath + "/highscoresavefile2.json", json);
     }
     
     public void LoadGameData()
     {
-        string path = Application.persistentDataPath + "/highscoresavefile.json";
+        string path = Application.persistentDataPath + "/highscoresavefile2.json";
         if (File.Exists(path))
         {
             string json = File.ReadAllText(path);
